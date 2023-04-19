@@ -1,15 +1,19 @@
 {
   "name": "juliana-assalti",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "release": "standard-version && git push --follow-tags && npm publish"
   },
   "dependencies": {
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
   }
 }
